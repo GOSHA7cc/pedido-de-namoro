@@ -1,29 +1,57 @@
 body {
-    background-color: pink;
-    color: white;
-    padding: 200px;
-  }
-  
-  p {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  
-  button {
-    background-color: red;
-    color: white;
-    width: 100px;
-    position: absolute;
-  }
-  
-  .hidden {
-    display:none;
-  }
-  
-  #move {
-    left: 200px;
-  }
-  
-  #change:hover {
-    cursor:pointer;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  transition: transform 0.3s;
+}
+
+#yesButton {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#noButton {
+  background-color: #f44336;
+  color: white;
+  position: absolute;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
